@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Archit Tandon</title>
+    <link id="favicon" rel="icon" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="menu">
+            <button class="dropdown-btn" onclick="toggleDropdown()" style="border: none; background-color: white;">
+                <svg class="hb" id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000000"
+                    stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                    <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                        <animate dur="0.2s" attributeName="d"
+                            values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze"
+                            id="startAnimation" begin="indefinite"/>
+                        <animate dur="0.2s" attributeName="d"
+                            values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze"
+                            id="reverseAnimation" begin="indefinite" />
+                    </path>
+                    <rect width="10" height="10" stroke="none">
+                        <animate dur="1s" id="reverse" attributeName="width" />
+                    </rect>
+                    <rect width="10" height="10" stroke="none">
+                        <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze"/>
+                        <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze"/>
+                    </rect>
+                </svg>
+            </button>
+            <div class="dropdown-content">
+                <a href="#experiences" style="color: rgb(255, 255, 255);">Experience</a>
+                <a href="#projects" style="color: rgb(255, 255, 255);">Projects</a>
+                <a href="#awards" style="color: rgb(255, 255, 255);">Awards</a>
+                <a href="#hackathons" style="color: rgb(255, 255, 255);">Hackathons</a>
+            </div>
+        </div>
+        <div class="anchor">
+            <a href="#experiences" style="color: black;">Experience</a>
+            <a href="#projects" style="color: black;">Projects</a>
+            <a href="#awards" style="color: black;">Awards</a>
+            <a href="#hackathons" style="color: black;">Hackathons</a>
+        </div>
+        <div class="navbar-text navbar-center">Archit Tandon</div>
+        <a href="https://www.linkedin.com/in/archit-tandon/" class="fa fa-linkedin icon" target="_blank"></a>
+        <a href="https://github.com/TandonArchit" class="fa fa-github icon" target="_blank"></a>
+        <div class="icon">
+            <a href="https://devpost.com/archittandon26" target="_blank"><svg fill="#000000" width="37px" height="37px"
+                    viewBox="0 -12 40 40" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z" />
+                </svg></a>
+        </div>
+    </div>
+    <div class="heading-text">
+        <div class="heading-text-1">Computer Science</div>
+        <div class="heading-text-2">Major at</div>
+        <div class="heading-text-3">McMaster University</div>
+    </div>
+    <div class="banner" id="experiences">
+        <div class="banner-text">Experience</div>
+    </div>
+    <div class="experiences">
+        <div class="experience">
+            <div class="job">
+                <div class="role">Developer Co-op</div>
+                <div class="date">May 2022 - PRESENT</div>
+            </div>
+            <div class="description">Developer at Romac Inc., Milton Ontario — Oracle APEX development, database
+                management and automation.</div>
+            <div class="tools">Tools: Oracle APEX, SQL, Python, CAD, JobBOSS, APIs, HTML/JS/CSS.</div>
+        </div>
+        <div class="experience">
+            <div class="job">
+                <div class="role">Research Assistant</div>
+                <div class="date">April 2022 - PRESENT</div>
+            </div>
+            <div class="description">Research Assistant to Dr. Alexander Klein at McMaster University. Did topic
+                modelling and full stack development of the <a href="https://brft.humanities.mcmaster.ca/"
+                    target="_blank" style="color: black;">BRFT</a> search engine (currently in the Alpha testing phase).
+            </div>
+            <div class="tools">Tools: Python, WSGI, Scikit Learn, Gensim, HTML/JS/CSS, Docker, NLTK.</div>
+        </div>
+        <div class="experience">
+            <div class="job">
+                <div class="role">Data Analyst</div>
+                <div class="date">May 2022 - April 2024</div>
+            </div>
+            <div class="description">Data analyst for McMaster University's Faculty of Engineering, Outreach Department.
+            </div>
+            <div class="tools">Tools: Power BI, Python, SQL, Matplotlib, MS Excel, Scikit Learn, and more.</div>
+        </div>
+        <div class="experience">
+            <div class="job">
+                <div class="role">Tutor</div>
+                <div class="date">January 2022 - April 2022</div>
+            </div>
+            <div class="description">Official McMaster Tutor — Tutored several students for COMPSCI 1MD3 - Intro to
+                Programming</div>
+        </div>
+    </div>
+    <div class="banner" id="projects">
+        <div class="banner-text">Projects</div>
+    </div>
+    <div class="main-project">
+        <div class="title">Sole Developer and Maintainer of the Python Library “SongNameSplit”</div>
+        <div class="downloads">40,000+ lifetime downloads internationally.</div>
+        <div class="description">The SongNameSplit library can take a song title and identify and differentiate the song
+            name from the artist's name with 97% to 99% accuracy.</div>
+        <div class="details">Details</div>
+        <div class="detail">
+            <a href="https://pypi.org/project/SongNameSplit/" target="_blank" style="color: black; margin-right: 20%;">PyPI</a> 
+            <a href="https://github.com/TandonArchit/SongNameSplit" target="_blank" style="color: black;"> GitHub</a>
+        </div>
+        <div class="installation">Installation</div>
+        <div class="pip"><mark style="background-color: lightgray;">pip install SongNameSplit</mark></div>
+    </div>
+    <div class="projects">
+        <div class="project">
+            <div class="title">Custom ERP Development</div>
+            <div class="description">Did custom ERP development for a company using Oracle APEX. Developed several
+                database management tools with custom REST API integration.</div>
+        </div>
+        <div class="project">
+            <div class="title">Mobile App Development</div>
+            <div class="description">Developed a custom mobile application for a cab service company to track car and
+                driver locations and live transmit it to their Web UI. Used React Native for development, along with
+                self-developed REST API's for integration.</div>
+        </div>
+        <div class="project">
+            <div class="title">Get Med Data</div>
+            <div class="description">Tool to extrapolate and digitize medical records, made using Python, Tesseract-OCR
+                and language processing. (Hackathon Project. Details.)</div>
+        </div>
+        <div class="project">
+            <div class="title">Heart-Watch</div>
+            <div class="description">Trained and tested a Machine Learning model for detecting early signs of a cardiac
+                episode. Trained on a dataset of 70,000 people, using Python and Scikit Learn. (Hackathon Project.
+                Details.)</div>
+        </div>
+        <div class="project">
+            <div class="title">LyricAI</div>
+            <div class="description">Converts a song's MP3 file into an entire lyrical video in HD quality. It separates
+                the music and the vocals, then uses AssembyAI to analyze them and generate text. Outputs a full lyric
+                video. (Hackathon Project. Details.)</div>
+        </div>
+        <div class="project">
+            <div class="title">Image ML Model</div>
+            <div class="description">An ML model that differentiates between the images of cats and dogs. Trained on
+                20,000 images, using TensorFlow. It had an accuracy of 99.2% on a test dataset, that was not used in
+                training.</div>
+        </div>
+    </div>
+    <div class="banner" id="awards">
+        <div class="banner-text">Awards</div>
+    </div>
+    <div class="awards">
+        <div class="award">
+            <div class="title">Deans' Honour List</div>
+            <div class="description">In April 2022, I was placed on the Deans' Honour List for good academic standing.
+            </div>
+        </div>
+        <div class="award">
+            <div class="title">Recieved The Faculty of Engineering Achievement Award.</div>
+            <div class="description">In December 2021, I received The Faculty of Engineering Achievement Award as term
+                honours for my Fall 2021 academic performance.</div>
+        </div>
+        <div class="award">
+            <div class="title">Recieved the McMaster Engineering Award of Excellence.</div>
+            <div class="description">In March 2021, I received the Award of Excellence from McMaster Engineering, valued
+                at $3,000, counting towards my tuition.</div>
+        </div>
+        <div class="award">
+            <div class="title">Qualified for the Indian National Mathematics Olympiad.</div>
+            <div class="description">In 2019, I qualified for the Indian National Mathematics Olympiad by being in the
+                top 30 students from my state and top 900 from all of India in the Regional Mathematics Olympiad 2019,
+                held by the HBCSE. I received a cash prize and a medal from my school for the same.</div>
+        </div>
+        <div class="award">
+            <div class="title">Qualified for the Regional Mathematics Olympiad, twice.</div>
+            <div class="description">In 2018 and again in 2019, I qualified for the Regional Mathematics Olympiad by
+                being in the top-performing students in my state and one of only two from my entire school in the
+                Pre-Regional Mathematics Olympiad, held by the HBCSE</div>
+        </div>
+        <div class="award">
+            <div class="title">Received Gold Medal in Computer Science Olympiad, twice.</div>
+            <div class="description">I received Gold Medal for Rank 1 in my school in the Computer Science Olympiad,
+                twice, held by the SOF Foundation.</div>
+        </div>
+    </div>
+    <div class="banner" id="hackathons">
+        <div class="banner-text">Hackathons</div>
+    </div>
+    <div class="hackathons">
+        <div class="hackathon">
+            <div class="title">DeltaHacks 8</div>
+        </div>
+        <div class="hackathon">
+            <div class="title">UofTHacks IX</div>
+        </div>
+        <div class="hackathon">
+            <div class="title">MacHacks 2</div>
+        </div>
+        <div class="hackathon">
+            <div class="title">NASA Space Apps Challenge Hackathon 2021</div>
+        </div>
+        <div class="hackathon">
+            <div class="title">McMaster University EMBER Compsci CONNECT Hackathon</div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="name">Archit Tandon</div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/archit-tandon/" class="fa fa-linkedin icon" target="_blank"></a>
+            <a href="https://github.com/TandonArchit" class="fa fa-github icon" target="_blank"></a>
+            <a class="icon" href="https://devpost.com/archittandon26" target="_blank"><svg fill="#ffffff" width="37px"
+                    height="37px" viewBox="0 -12 40 40" role="img" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.002 1.61 0 12.004 6.002 22.39h11.996L24 12.004 17.998 1.61zm1.593 4.084h3.947c3.605 0 6.276 1.695 6.276 6.31 0 4.436-3.21 6.302-6.456 6.302H7.595zm2.517 2.449v7.714h1.241c2.646 0 3.862-1.55 3.862-3.861.009-2.569-1.096-3.853-3.767-3.853z" />
+                </svg></a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
