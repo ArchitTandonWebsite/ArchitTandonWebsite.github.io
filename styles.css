@@ -287,6 +287,13 @@ a {
     padding-right: 10%;
 }
 
+.experience .description2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
 .experience .date {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -325,6 +332,13 @@ a {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         padding: 2%;
+        text-align: center;
+    }
+
+    .experience .description2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        padding: 1%;
         text-align: center;
     }
 
